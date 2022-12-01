@@ -32,11 +32,16 @@ app.use(express.urlencoded({ extended: true }))
 
 
 
-app.use(express.static(path.join(__dirname + "/../public")))
+
 
 
 // Handle custom routes
 app.use('/api/v1/user', require('./routes/userRoutes'))
+
+
+
+
+app.use(express.static(path.join(__dirname + "/../public")))
 
 // API Documentation
 if (process.env.NODE_ENV !== 'production') {
