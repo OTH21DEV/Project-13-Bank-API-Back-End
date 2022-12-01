@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 const databaseUrl =
-  process.env.DATABASE_URL || 'mongodb://https://argent-bank-p13.herokuapp.com/argentBankDB'
+  process.env.DATABASE_URL || 'mongodb://localhost/argentBankDB'
 
 module.exports = async () => {
   try {
