@@ -10,7 +10,7 @@ dotEnv.config()
 
 const app = express()
 //change port 3001 into 5000
-const PORT = process.env.PORT || 5000
+const port = process.env.PORT || 5000
 
 
 /**test */
@@ -47,6 +47,6 @@ app.get('/', (req, res, next) => {
   res.send('Hello from my Express server v2!')
 })
 
-app.listen(PORT,host, () => {
-  console.log(`Server listening on http://localhost:${PORT}`)
+app.listen(port,host, () => {
+  console.log(`Server listening on http://localhost:${port}`)
 })
