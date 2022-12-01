@@ -9,7 +9,16 @@ const dbConnection = require('./database/connection')
 dotEnv.config()
 
 const app = express()
-const PORT = process.env.PORT || 3001
+//change port 3001 into 5000
+const PORT = process.env.PORT || 5000
+
+
+/**test */
+const host = '0.0.0.0';
+const path = require ('path')
+//
+
+
 
 // Connect to the database
 dbConnection()
@@ -20,6 +29,11 @@ app.use(cors())
 // Request payload middleware
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
+
+
+
+app.use(express.static(path.join(__dirname + "/../public")))
+
 
 // Handle custom routes
 app.use('/api/v1/user', require('./routes/userRoutes'))
@@ -33,6 +47,6 @@ app.get('/', (req, res, next) => {
   res.send('Hello from my Express server v2!')
 })
 
-app.listen(PORT, () => {
+app.listen(PORT,host, () => {
   console.log(`Server listening on http://localhost:${PORT}`)
 })
