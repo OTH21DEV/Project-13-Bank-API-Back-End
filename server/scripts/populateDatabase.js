@@ -1,6 +1,6 @@
 const axios = require('axios')
-const signupApi = 'http://localhost:3001/api/v1/user/signup'
-
+//const signupApi = 'http://localhost:3001/api/v1/user/signup'
+const signupApi = 'https://argent-bank-p13.herokuapp.com/api/v1/user/signup'
 const users = [
   {
     firstName: 'Tony',
