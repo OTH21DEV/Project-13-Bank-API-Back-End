@@ -6,7 +6,7 @@
   "keywords": [],
   "author": "",
   "license": "",
-  "main": "server.js",
+  "main": "index.js",
   "dependencies": {
     "axios": "^0.19.2",
     "bcrypt": "^5.0.0",
@@ -22,7 +22,7 @@
     "dev:server": "node ./server/server.js",
     "populate-db": "node ./server/scripts/populateDatabase.js",
     "server": "node ./server/server.js",
-    "start": "node ./server/server.js"
+    "start": "NODE_ENV=production node ./server/server.js"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
