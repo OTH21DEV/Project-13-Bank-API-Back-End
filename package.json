@@ -6,7 +6,7 @@
   "keywords": [],
   "author": "",
   "license": "",
-  "main": "index.js",
+  "main": "server/server.js",
   "dependencies": {
     "axios": "^0.19.2",
     "bcrypt": "^5.0.0",
