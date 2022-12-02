@@ -14,7 +14,7 @@ const port = process.env.PORT || 5000
 
 
 /**test */
-const host = '0.0.0.0:27017';
+const host = '0.0.0.0';
 const path = require ('path')
 //
 
