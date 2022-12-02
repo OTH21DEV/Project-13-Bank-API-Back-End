@@ -14,7 +14,7 @@ const port = process.env.PORT || 5000
 
 
 /**test */
-//const host = '127.0.0.1';
+const host = '0.0.0.0';
 const path = require ('path')
 //
 
@@ -52,6 +52,6 @@ app.get('/', (req, res, next) => {
   res.send('Hello from my Express server v2!')
 })
 
-app.listen(port, () => {
+app.listen(port,host, () => {
   console.log(`Server listening on http://localhost:${port}`)
 })
