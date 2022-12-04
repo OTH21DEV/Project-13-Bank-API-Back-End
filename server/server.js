@@ -53,7 +53,6 @@ app.get('/', (req, res, next) => {
 })
 
 app.listen(port,host, () => {
-  //console.log(`Server listening on http://localhost:${port}`)
-  console.log(`Server listening on http://vps-7e7110d5.vps.ovh.ca:${port}`)
+  console.log(`Server listening on http://localhost:${port}`)
+  //console.log(`Server listening on http://vps-7e7110d5.vps.ovh.ca:${port}`)
 })
-//    "dev:server": "node ./server/server.js",
