@@ -1,6 +1,8 @@
 const axios = require('axios')
 //const signupApi = 'http://localhost:3001/api/v1/user/signup'
-const signupApi = 'https://bank13.oxawebdev.com/api/v1/user/signup'
+//const signupApi = 'https://bank13.oxawebdev.com/api/v1/user/signup'
+
+const signupApi = 'http://localhost:4040/api/v1/user/signup'
 const users = [
   {
     firstName: 'Tony',
