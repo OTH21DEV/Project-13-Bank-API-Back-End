@@ -17,7 +17,7 @@ const app = express()
 //const port= process.env.PORT || 3000
 
 /**test */
-const host = '0.0.0.0';
+//const host = '0.0.0.0';
 const path = require ('path')
 //
 
@@ -55,7 +55,7 @@ app.get('/', (req, res, next) => {
   res.send('Hello from my Express server v2!')
 })
 
-app.listen(host,() => {
-  console.log(`Server listening on http://localhost:${host}`)
+app.listen(() => {
+  console.log(`Server listening on http://localhost:`)
   //console.log(`Server listening on http://vps-7e7110d5.vps.ovh.ca:${port}`)
 })
