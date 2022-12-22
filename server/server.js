@@ -57,6 +57,6 @@ app.get('/', (req, res, next) => {
 })
 
 app.listen(port,() => {
-  console.log(`Server listening on http://localhost:${port}`)
+  console.log(`Server listening on https://localhost:${port}`)
   //console.log(`Server listening on http://vps-7e7110d5.vps.ovh.ca:${port}`)
 })
