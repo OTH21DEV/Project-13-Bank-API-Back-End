@@ -14,7 +14,7 @@ const app = express()
 
 //test 2 with atlas
 //'mongodb://admin:Coucou1984@198.51.100.22:27017'
-const PORT = process.env.PORT || 27017
+//const PORT = process.env.PORT || 27017
 
 /**test */
 const host = '0.0.0.0';
