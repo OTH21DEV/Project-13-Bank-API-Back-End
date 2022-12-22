@@ -14,7 +14,7 @@ const app = express()
 
 //test 2 with atlas
 //'mongodb://admin:Coucou1984@198.51.100.22:27017'
-//const port= process.env.PORT || 3000
+const port= process.env.PORT || 8080
 
 /**test */
 //const host = '0.0.0.0';
@@ -55,7 +55,7 @@ app.get('/', (req, res, next) => {
   res.send('Hello from my Express server v2!')
 })
 
-app.listen(() => {
-  console.log(`Server listening on http://localhost:`)
+app.listen(port,() => {
+  console.log(`Server listening on http://localhost:${port}`)
   //console.log(`Server listening on http://vps-7e7110d5.vps.ovh.ca:${port}`)
 })
