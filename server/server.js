@@ -53,7 +53,8 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 app.get('/*', (req, res, next) => {
-  res.send('Hello from my Express server v2!')
+  //res.send('Hello from my Express server v2!')
+  res.sendFile(path.join(__dirname, '/../public', 'index.html'));
 })
 
 app.listen(port,host,() => {
