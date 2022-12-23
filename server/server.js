@@ -45,7 +45,7 @@ app.use('/api/v1/user', require('./routes/userRoutes'))
 
 
 
-app.use(express.static(path.join(__dirname + "/../public")))
+app.use(express.static(path.join(__dirname + "/../public" + 'index.html')))
 
 // API Documentation
 if (process.env.NODE_ENV !== 'production') {
