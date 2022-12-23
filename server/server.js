@@ -45,7 +45,7 @@ app.use('/api/v1/user', require('./routes/userRoutes'))
 
 
 
-app.use(express.static(path.join(__dirname + "/../public" + '/index.html')))
+app.use(express.static(path.join(__dirname + "/../public" )))
 
 // API Documentation
 if (process.env.NODE_ENV !== 'production') {
@@ -53,8 +53,8 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 app.get('/', (req, res, next) => {
-  res.send('Hello from my Express server v2!')
-  //res.sendFile(path.join(__dirname, '/../public', 'index.html'));
+  //res.send('Hello from my Express server v2!')
+  res.sendFile(path.join(__dirname, '/../public', './index.html'));
 })
 
 app.listen(port,host,() => {
