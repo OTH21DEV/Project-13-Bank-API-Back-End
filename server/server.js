@@ -16,6 +16,9 @@ const app = express()
 //'mongodb://admin:Coucou1984@198.51.100.22:27017'
 
 
+// Handle CORS issues
+app.use(cors())
+
 /**test */
 const host = '0.0.0.0';
 const port = process.env.PORT || 3000
@@ -27,8 +30,7 @@ const path = require ('path')
 // Connect to the database
 dbConnection()
 
-// Handle CORS issues
-app.use(cors())
+
 
 // Request payload middleware
 app.use(express.json())
@@ -53,8 +55,8 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 app.get('/', (req, res, next) => {
-  //res.send('Hello from my Express server v2!')
-  res.sendFile(path.join(__dirname, '/../public'));
+  res.send('Hello from my Express server v2!')
+  //res.sendFile(path.join(__dirname, '/../public'));
 })
 
 app.listen(port,host,() => {
