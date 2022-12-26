@@ -34,7 +34,7 @@ dbConnection()
 
 // Request payload middleware
 app.use(express.json())
-app.use(express.urlencoded({ extended: true }))
+app.use(express.urlencoded({ extended: false}))
 
 
 
