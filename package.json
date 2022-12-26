@@ -1,5 +1,6 @@
 {
   "name": "argent-bank-api",
+  "homepage": "https://argent-bank-p13.herokuapp.com",
   "version": "0.0.1",
   "private": true,
   "description": "Project #10 - Argent Bank",

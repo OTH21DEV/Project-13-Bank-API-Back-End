@@ -12,8 +12,6 @@ const app = express()
 //change port 3001 into 5000
 //const port = process.env.PORT || 5000
 
-//test 2 with atlas
-//'mongodb://admin:Coucou1984@198.51.100.22:27017'
 
 
 // Handle CORS issues
