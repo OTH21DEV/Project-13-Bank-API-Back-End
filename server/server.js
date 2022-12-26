@@ -54,7 +54,7 @@ if (process.env.NODE_ENV !== 'production') {
   app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs))
 }
 
-app.get('/index.html', (req, res, next) => {
+app.get('./', (req, res, next) => {
   res.send('Hello from my Express server v2!')
   //res.sendFile(path.join(__dirname, '/../public'));
 })
